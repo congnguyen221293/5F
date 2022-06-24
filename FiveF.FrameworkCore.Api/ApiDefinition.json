@@ -1,0 +1,48 @@
+[
+  {
+    "name": "Make",
+    "route": "/make",
+    "idType": "int",
+    "Fields": [
+      {
+        "name": "Name",
+        "type": "String"
+      },
+      {
+        "name": "Description",
+        "type": "String"
+      },
+      {
+        "name": "Year",
+        "type": "int"
+      }
+    ]
+  },
+  {
+    "name": "Car",
+    "route": "/cars",
+    "idType": "int",
+    "Fields": [
+      {
+        "name": "Name",
+        "type": "String"
+      },
+      {
+        "name": "Description",
+        "type": "String"
+      },
+      {
+        "name": "Year",
+        "type": "int"
+      },
+      {
+        "name": "Make",
+        "type": "virtual Make"
+      },
+      {
+        "name": "MakeId",
+        "type": "int"
+      }
+    ]
+  }
+]
